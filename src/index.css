@@ -1,97 +1,84 @@
-.main_div{
-  width: 100%;
-  height: 100vh;
-  background: #6983aa;
+*{
+  margin: 0%;
+  padding: 0%;
+}
+.header{
+  background-color: rgba(23, 173, 211, 0.452);
+  /* height: 8.5vh; */
+  position: relative;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
-.center_div{
-  width: 25%;
-  height: 80vh;
-  background-color: #f4f4f4;
-  box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.5);
-  border-radius: 15px;
-  overflow-y: scroll;
-}
-h1{
-  color: white;
-  background: transparent;
-  background-color: #8566aa;
-  padding: 10px;
-  margin-bottom: 10px;
-  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
-}
-input{
-  text-align: center;
-  height: 30px;
-  top: 10px;
-  border: none;
-  background: transparent;
-  font-size: 20px;
-  font-weight: 500;
-  width: 60%;
-  border-bottom: 2px solid #8566aa;
-  outline: none;
-}
-button{
-  min-height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  border-color: transparent;
-  background-color: #8566aa;
-  color: #fff;
-  font-size: 40px;
-  border: none;
-  outline: none;
-  margin-left: 10px;
-  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
-}
-button:hover{
-  background-color: #20bf6b;
-}
-ol{
-  margin-top: 30px;
-}
-ol li{
-  margin-bottom: 12px;
-  padding-left: 0px;
-  text-align: left;
-  font-size: 25px;
-  font-weight: 500;
-  min-height: 40px;
-  display: flex;
-  align-items: center;
-  color: #8566aa;
-  text-transform: capitalize;
-}
-.todo_style{
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  align-items: left;
+.header img{
+  height: 8vh;
+  width: 5vw;
 }
 
-.todo_style .deleteButton {
+.main_note{
+  /* background-color: yellow; */
+  text-align: center;
+  justify-items: center;
+  margin-top: 3vh;
+  position: absolute;
+  height: auto;
+  width: 18vw;
+  /* width: 100%; */
+  box-shadow: 2px 2px 2px 2px black;
+  left: 50%;
+  transform: translate(-50%);
   
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #8566aa;
+}
+.main_note input{
+  border: none;
+  margin-top: 1vh;
+  width: 18vw;
+  box-shadow: 1px 1px 1px 1px red;
+  
+  
+}
+.main_note textarea{
+  border: none;
+  width: 18vw;
+  height: 24vh;
+  margin-top: 0.5vh;
+  box-shadow: 1px 1px 1px 1px red;
+  
+}
+.main_note .btnn{
+  background-color: orangered;
   border-radius: 50%;
-  margin: 0 15px 10px 0px;
-  color: aliceblue;
-  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
-  font-size: 20px;
+  position: absolute;
+  left: 204%;
 }
-.todo_style .deleteButton:hover{
-  background-color: crimson;
+.main_note .btnn:hover{
+  background-color: orange;
 }
-/* button{
-  margin-left: 5px;
-  min-height: 40px;
-  color: #fff;
-  font-size: 30px;
-} */
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+.c-note{
+  position: relative;
+  float: left;
+  margin-top: 20%;
+  
+}
+.c-note .note{
+  height: 20vh;
+  width: 17vw;
+  box-shadow: 2px 2px 2px 2px black;
+  margin-left: 17px !important;
+
+}
+.note .delbtn{
+  border-radius: 50%;
+  background-color: orangered;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+.note .delbtn:hover{
+  background-color: orange;
+}
